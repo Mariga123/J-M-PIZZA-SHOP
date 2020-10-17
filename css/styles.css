@@ -35,3 +35,21 @@
       text-align: center;
       font-size: 15px;
   }
+  .carousel-inner img {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  #images{
+    width: 500px;
+    height: 400px;
+  }
