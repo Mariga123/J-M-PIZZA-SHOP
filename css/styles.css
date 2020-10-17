@@ -9,7 +9,7 @@
 }
 .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: lightcoral;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -52,4 +52,30 @@
   #images{
     width: 500px;
     height: 400px;
+  }
+  #height{
+    height: 180px;
+    width: 270px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
   }
