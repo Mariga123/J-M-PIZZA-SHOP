@@ -104,28 +104,28 @@
         <div class="thumbnail">
           <img src="img/chickenpizza.jpg">
           <p><strong>chicken pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
           <img src="img/hawaian pizza.jpg" id="height">
           <p><strong>Hawaian pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
           <img src="img/magheritapizza.jpg">
           <p><strong>Megherita pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
           <img src="img/pepporoni pizza.jpg">
           <p><strong>Pepporoni pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
     </div>
@@ -134,32 +134,67 @@
         <div class="thumbnail">
           <img src="img/supremepizza.jpg">
           <p><strong>Supreme pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
           <img src="img/vegiepizza.jpg" alt="New York">
           <p><strong>Vegiepizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
           <img src="img/buffalo pizza.jpg">
           <p><strong>Buffalo Pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
           <img src="img/meatpizza.jpg">
           <p><strong>Meat Pizza</strong></p>
-          <button class="btn">Add To Cart</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal" >Add To Cart</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> CHECKOUT</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>QUANTITY</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user">Home Address</span></label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-block">Pay
+              <span class="glyphicon glyphicon-ok"></span>
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 </body>
