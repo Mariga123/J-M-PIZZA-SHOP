@@ -20,6 +20,9 @@
 h6{
   color:blue;
 }
+#pricing{
+  text-align: center;
+}
 .navbar {
     margin-bottom: 0;
     background-color: lightcoral;
