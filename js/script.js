@@ -50,13 +50,13 @@ $(document).ready(function () {
         newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
         newTotal = new Total(price, pizzaQty, DeliveryCost);
         if (pizzaPick===1){
-        alert("Your oder is: " + newOrder.fullOrder() + ".continue to see your total bill");
-        alert("your bill is: " + newTotal.finalTotal());
+        alert("Your oder is: " + newOrder.fullOrder() + ".click OK to see your bill");
+        alert("total payable is: " + newTotal.finalTotal());
         }else{
             if(pizzaPick===2){
                 prompt("Enter your Address");
-                alert("Your oder is: " + newOrder.fullOrder() + "your pizza will be delivered to your provided Address" +".continue to see your total bill");
-                alert("your bill is: " + newTotal.finalTotal()) + "Thanks for trusting us";
+                alert("Your oder is: " + newOrder.fullOrder() + "Your pizza will be delivered to your provided Address" +".click OK to see your bill");
+                alert("total payable is: " + newTotal.finalTotal()) + "Thanks for trusting us";
             }
         }
 
