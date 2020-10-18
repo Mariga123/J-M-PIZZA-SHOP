@@ -6,6 +6,20 @@
     color:white;
     padding: 100px 120px;
 }
+#services{
+  text-align: center;
+  color: black;
+  padding: 8px;
+}
+#services h2{
+  padding: 20px;
+}
+#pizza h2{
+  padding: 30px;
+}
+h6{
+  color:blue;
+}
 .navbar {
     margin-bottom: 0;
     background-color: lightcoral;
@@ -33,6 +47,11 @@
   #about{
       text-align: center;
       font-size: 15px;
+      padding: 15px;
+      margin-bottom: -10px;
+  }
+  #about h2{
+    padding: 13px;
   }
   .carousel-inner img {
     width: 100%;
