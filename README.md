@@ -2,7 +2,7 @@
 
 ## DESIGNER
  MARIGA JOHN
- 
+
 ## Description
 * An pizza shop for customers to make their at the comfort of their homes,parties offices or any place of the country and get their orders delivered quick.
 * This website was started to ensure safety of our customers during this period and allows them to be safe with their families.
@@ -15,7 +15,7 @@
 
 ### Interface with the page
  <img src="img/interface.png">
-* Visit our page and enjoy the your favourite pizza at affordable price.
+* Visit our page and enjoy your favourite pizza at affordable price.
 
 ### To run my page on your browser,
 * Download the zip codes from my git account.

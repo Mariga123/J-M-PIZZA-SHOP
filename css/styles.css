@@ -18,7 +18,7 @@
   padding: 30px;
 }
 h6{
-  color:blue;
+  color:black;
 }
 #pricing{
   text-align: center;
@@ -104,8 +104,33 @@ h6{
     background-image: url(../img/contacts.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
   }
-  .btn{
-    align-items: center;
+  #button{
+    color: #000;
+  }
+#email,#name ,#subject {
+background: transparent;
+color: white;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: horizontal;
+}
+  
+input[type=submit] {
+    cursor: pointer;
     text-align: center;
-  }
+}
+  
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+form#formInput ::placeholder {
+    color:white;    
+}

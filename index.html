@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="container">
+<body class="container" id="nav">
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -26,7 +26,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT US</a></li>
           <li><a href="#services">SERVICES</a></li>
-          <li><a href="#pricing">MENU</a></li>
+          <li><a href="#pizza">MENU</a></li>
+          <li><a href="#pricing">ORDER</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li><a href="#pizza"><span class="glyphicon glyphicon-search"></span></a></li>
         </ul>
@@ -43,11 +44,15 @@
       <h2><b>ABOUT US</b></h2>
       <p>J&M pizza online platform was started three years ago after an increasing market and demand from customers
         increased.</p>
-      <p>As for the good customer relation and feedback we have been recieving from our esteemed customers we figured out
+      <p>As for the good customer relation and feedback we have been recieving from our esteemed customers we figured
+        out
         a way to satisfy them even more by making their request be our priority.</p>
-      <p>We have partnered with other stakeholders to ensure our customers are quaranteed <b><em>QUALITY</em>,QUANTITY and
+      <p>We have partnered with other stakeholders to ensure our customers are quaranteed <b><em>QUALITY</em>,QUANTITY
+          and
           <em>AFFORDABLE PIZZA</em></b>of their test </p>
-    </div>
+    </div> <a class="up-arrow" href="#nav" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
   </section>
 
   <!-- SERVICES -->
@@ -102,7 +107,11 @@
         </a>
       </div>
     </div>
+    <a class="up-arrow" href="#about" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
   </section>
+
   <section class="pizza">
     <div class="container-fluid text-center" id="pizza">
       <h2><b>J&M MENU</b></h2>
@@ -167,42 +176,46 @@
         </div>
       </div>
     </div>
+    <a class="up-arrow" href="#services" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
   </section>
-  <!-- Modal for home delivery -->
-  <section class="modal">
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> CHECKOUT</h4>
-          </div>
-          <div class="modal-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>QUANTITY</label>
-                <input type="number" class="form-control" id="psw" placeholder="How many?">
-              </div>
-              <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user">Home Address</span></label>
-                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-              </div>
-              <button type="submit" class="btn btn-block">Pay
-              </button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-              <span class="glyphicon glyphicon-remove"></span> Cancel
+  <!-- Modal for home delivery -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> CHECKOUT</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>QUANTITY</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div><a class="up-arrow" href="#nav" data-toggle="tooltip" title="TO TOP">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br><br>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user">Home Address</span></label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-block">Pay
             </button>
-            <p>Need <a href="#contact">help?</a></p>
-          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#pricing">help?</a></p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <section id="pricing" class="check">
     <div class="container">
       <div class="row">
@@ -275,7 +288,11 @@
         </div>
       </div>
     </div>
+    <a class="up-arrow" href="#pizza" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
   </section>
+
   <section id="contact">
     <div class="container">
       <h3 class="text-center">Contact us</h3>
@@ -287,27 +304,25 @@
           <p><span class="glyphicon glyphicon-phone"></span>Phone: +074229975</p>
           <p><span class="glyphicon glyphicon-envelope"></span>Email: johnmariga8@gmail.com</p>
         </div>
-        <div class="col-md-7">
+        <form action="http://eepurl.com/hfNUU5" text-white id="formInput">
           <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <div class="col-md-6">
+              <input type="text" id="name" class="form-control" name="name" placeholder="Name..." required>
             </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <div class="col-md-6">
+              <input type="email" id="email" class="form-control" name="email" placeholder="Email.." required>
             </div>
+            <div class="col-md-7">
+              <textarea id="subject" id="comment" class="form-control" name="subject" placeholder="Your message here.."
+                style="height:200px" required></textarea>
+            </div>
+            <input type="submit" value="Submit" id="button">
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="12"></textarea>
-          <div class="row">
-            <div class="col-md-8 form-group">
-              <button class="btn" type="submit">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+        </form>
   </section>
   <footer class="text-center">
-    <a class="up-arrow" href="#about" data-toggle="tooltip" title="TO TOP">
+    <a class="up-arrow" href="#nav" data-toggle="tooltip" title="TO TOP">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a><br><br>
     <p>Designed By <a href="https://github.com/Mariga123" data-toggle="tooltip" title="Visit w3schools">Mariga
