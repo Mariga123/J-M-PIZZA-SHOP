@@ -52,11 +52,13 @@ $(document).ready(function () {
         if (pizzaPick===1){
         alert("Your oder is: " + newOrder.fullOrder() + ".click OK to see your bill");
         alert("total payable is: " + newTotal.finalTotal());
+        alert("Thanks for shopping with us")
         }else{
             if(pizzaPick===2){
                 prompt("Enter your Address");
                 alert("Your oder is: " + newOrder.fullOrder() + "Your pizza will be delivered to your provided Address" +".click OK to see your bill");
-                alert("total payable is: " + newTotal.finalTotal()) + "Thanks for trusting us";
+                alert("total payable is: " + newTotal.finalTotal());
+                alert("Thanks for shopping with us")
             }
         }
 
